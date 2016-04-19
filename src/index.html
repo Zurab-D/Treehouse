@@ -19,58 +19,79 @@
   <![endif]-->
 </head>
 
-<body>
-  <div class="container">
-    <div class="header  clearfix">
-      <nav>
-        <ul class="nav  nav-pills  pull-right">
-          <li role="presentation" class="active"><a href="#">Home</a></li>
-          <li role="presentation"><a href="#">About</a></li>
-          <li role="presentation"><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <h3 class="text-muted">Project name</h3>
-    </div>
+<body data-spy="scroll" data-target=".navbar" class="navbar-is-fixed-top">
 
-
-
-    <div class="jumbotron">
-      <h1>Jumbotron heading</h1>
-      <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-      <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
-    </div>
-
-
-
-    <div class="row  marketing">
-      <div class="col-lg-6">
-        <h4>Subheading</h4>
-        <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-        <h4>Subheading</h4>
-        <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-        <h4>Subheading</h4>
-        <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+  <div class="container-full">
+    <nav class="navbar  navbar-default  navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand  text-hide" href="#"><img src="img/logo.png" alt="logo" width="100" height="19">Project name</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Portfolio</a></li>
+            <li><a href="#team">Values</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
+    </nav>
+  </div>
 
-      <div class="col-lg-6">
-        <h4>Subheading</h4>
-        <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
 
-        <h4>Subheading</h4>
-        <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
 
-        <h4>Subheading</h4>
-        <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+  <section class="jumbotron">
+    <div class="container">
+      <h1 class="jumbotron__head">Creative digital solutions</h1>
+      <p class="jumbotron__text  lead">Cras justo odio, dapibus ac facilisis</p>
+      <p><a class="btn  btn-lg  btn-success  jumbotron__btn" href="#" role="button">Sign up today</a></p>
+    </div>
+  </section>
+
+
+
+  <section class="container  services" id="services">
+    <h1 class="services__head">Professional services</h1>
+    <p class="services__subheader">Lorem ipsum dolor sit amet, consectetur.</p>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="services__item  services__item--designs">
+          <h2 class="services__item-head">Beauttiful designs</h2>
+          <p class="services__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus neque id tempore fuga eligendi repudiandae sapiente, ab eum?</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="services__item  services__item--responcive">
+          <h2 class="services__item-head">Responsive web</h2>
+          <p class="services__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus neque id tempore fuga eligendi repudiandae sapiente, ab eum?</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="services__item  services__item--tools">
+          <h2 class="services__item-head">Marketing tools</h2>
+          <p class="services__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus neque id tempore fuga eligendi repudiandae sapiente, ab eum?</p>
+        </div>
       </div>
     </div>
+  </section>
 
-    <footer class="footer">
-      <p>&copy; 2015 Company, Inc.</p>
-    </footer>
 
-  </div> <!-- /container -->
+
+  .
+
+
+
+  <footer class="container  footer">
+    <p>&copy; 2015 Company, Inc.</p>
+  </footer>
 
 
 

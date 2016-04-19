@@ -1,10 +1,10 @@
 body {
   position: relative;
   color: $color-base;
-  font-family: "Open Sans", sans-serif;
-  /* &.navbar-is-fixed-top {
-    padding-top: 81px;
-  } */
+  font-family: "Roboto Slab", sans-serif;
+  &.navbar-is-fixed-top {
+    padding-top: 115px;
+  }
 }
 
 .transition,
