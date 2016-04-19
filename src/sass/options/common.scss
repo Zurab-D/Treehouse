@@ -1,0 +1,25 @@
+body {
+  position: relative;
+  color: $color-base;
+  font-family: "Open Sans", sans-serif;
+  /* &.navbar-is-fixed-top {
+    padding-top: 81px;
+  } */
+}
+
+.transition,
+.transition * {
+  transition: $transition-duration linear;
+}
+
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+.outline {
+  outline: 1px solid lime;
+}

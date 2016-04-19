@@ -1,0 +1,128 @@
+/* миксины */
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+
+/* Центрировать по вертикали текст в блоке (например в пункте меню) */
+@mixin text-center-vertical ($block-height, $line-height) {
+  padding-top: ($block-height - $line-height) / 2;
+  padding-bottom: ($block-height - $line-height) / 2;
+}
+
+
+
+/* Вычислить паддинг между двумя блоками зная требуемое расстояние между ними */
+@mixin padding-between-blocks ($height-required, $font-size-1, $lign-height-1, $font-size-2, $lign-height-2, $top-or-bottom: bottom, $margin-or-padding: padding) {
+  #{$margin-or-padding}-#{$top-or-bottom}:
+    floor($height-required - ($lign-height-1 - $font-size-1 * 0.8) / 2
+    - ($lign-height-2 - $font-size-2 * 0.7) / 2);
+}
+
+
+
+/* Вычислить паддинг между первой/последней строкой и верхним/нижним краем блока */
+@mixin padding-to-edge ($height-required, $font-size, $lign-height, $top-or-bottom: bottom, $margin-or-padding: padding) {
+  @include padding-between-blocks ($height-required, $font-size, $lign-height, 0, 0, $top-or-bottom, $margin-or-padding);
+}
+
+
+
+@mixin outline {
+  outline: 1px solid lime;
+}
+
+
+
+@mixin large-btn-states {
+  &:hover {
+    background-color: $color-bg-menu-active;
+    color: #fff;
+    a {
+      color: #fff;
+    }
+  }
+  &:active {
+    background-color: $color-bg-menu-active;
+    color: $color-blue-light;
+    a {
+      color: $color-blue-light;
+    }
+  }
+}
+
+
+
+@mixin menu-item-states {
+  &:hover {
+    background-color: #fff;
+    color: $color-blue;
+  }
+  &:active {
+    background-color: #fff;
+    color: #b2b2b2;
+  }
+}
+
+
+
+/* здесь нужны подробные комментрарии */
+@mixin veil($z-index: 100) {
+  & {
+    position: relative;
+    overflow: hidden;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #737373;
+    opacity: 0.6;
+    z-index: $z-index;
+  }
+}
+
+
+
+@mixin veil-small($nesting: 0, $bg-color: #fff, $bg-opacity: 0.4, $hover-z-index: 10) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background-color: rgba($bg-color, $bg-opacity);
+  @if $nesting == 2 {
+    &:hover,
+    *:hover > &,
+    *:hover > * > & {
+      opacity: 1;
+      z-index: $hover-z-index;
+    }
+  }
+  @if $nesting == 1 {
+    &:hover,
+    *:hover > & {
+      opacity: 1;
+      z-index: $hover-z-index;
+    }
+  }
+  @if $nesting == 0 {
+    &:hover {
+      opacity: 1;
+      z-index: $hover-z-index;
+    }
+  }
+}
