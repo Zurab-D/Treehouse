@@ -1,5 +1,6 @@
 (function($){
-  $(".navbar-nav li a[href^='#']").on('click',function(e){
+  //$(".navbar-nav li a[href^='#']").on('click',function(e){
+  $(".navbar a[href^='#']").on('click',function(e){
     e.preventDefault();
 
     var hash = this.hash;

@@ -19,8 +19,9 @@
   <![endif]-->
 </head>
 
-<body data-spy="scroll" data-target=".navbar" class="navbar-is-fixed-top">
+<body  id="home" data-spy="scroll" data-target=".navbar" class="navbar-is-fixed-top">
 
+  <!-- MENU -->
   <div class="container-full">
     <nav class="navbar  navbar-default  navbar-fixed-top">
       <div class="container">
@@ -31,14 +32,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand  text-hide" href="#"><img src="img/logo.png" alt="logo" width="100" height="19">Project name</a>
+          <a class="navbar-brand  text-hide" href="#home"><img src="img/logo.png" alt="logo" width="100" height="19">Project name</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#work">Portfolio</a></li>
-            <li><a href="#team">Values</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#values">Values</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -48,16 +49,18 @@
 
 
 
+  <!-- JUMBOTRON -->
   <section class="jumbotron">
     <div class="container">
       <h1 class="jumbotron__head">Creative digital solutions</h1>
       <p class="jumbotron__text  lead">Cras justo odio, dapibus ac facilisis</p>
-      <p><a class="btn  btn-lg  btn-success  jumbotron__btn" href="#" role="button">Sign up today</a></p>
+      <a class="btn  btn-success  btn-more  jumbotron__btn" href="#" role="button">Sign up today</a>
     </div>
   </section>
 
 
 
+  <!-- SERVICES -->
   <section class="container  services" id="services">
     <h1 class="services__head">Professional services</h1>
     <p class="services__subheader">Lorem ipsum dolor sit amet, consectetur.</p>
@@ -85,12 +88,137 @@
 
 
 
-  .
+  <!-- LET US DO -->
+  <section class="job">
+    <div class="row">
+      <div class="col-md-8  col-md-offset-4  job__content">
+        <h1 class="job__head">Just relax &<br>let us do the heavy lifting</h1>
+        <p class="job__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+        <ul class="job__list  list-unstyled">
+          <li class="job__list-item">Initial Setup & Customizations</li>
+          <li class="job__list-item">Regular Updates</li>
+          <li class="job__list-item">Round The Clock Support</li>
+        </ul>
+        <a href="" class="btn  btn-success  btn-more  job__btn">Learn more</a>
+      </div>
+    </div>
+  </section>
 
 
 
+  <!-- LATEST PROJECT -->
+  <section class="portfolio  container" id="portfolio">
+    <h1 class="portfolio__head">portfolio project</h1>
+    <p class="portfolio__head-sub">Proin iaculis purus consequat sem cure</p>
+    <div class="row">
+      <article class="col-md-6 portfolio__content">
+        <h2>Developing a framework</h2>
+        <p class="portfolio__text">Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
+        <ul class="portfolio__features">
+          <li><h3 class="portfolio__feature-title">E-Commerce Ready</h3><p class="portfolio__text">Proin iaculis purus consequat sem cure digni ssim. </p></li>
+          <li><h3 class="portfolio__feature-title">Powerful SEO Features</h3><p class="portfolio__text">Proin iaculis purus consequat sem cure</p></li>
+          <li><h3 class="portfolio__feature-title">Secure Encryption</h3><p class="portfolio__text">Proin iaculis purus consequat sem cure iaculis purus.</p></li>
+        </ul>
+        <p class="portfolio__text">Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in.</p>
+        <a href="#details" class="portfolio__details">View Details</a>
+      </article>
+    </div>
+  </section>
+
+
+
+  <!-- CULTUE & VALUES -->
+  <section class="values  container" id="values">
+    <h1 class="values__head">Culture & Values</h1>
+    <p class="values__head-sub">Proin iaculis purus consequat cure. </p>
+    <ul class="values__list">
+      <li class="values__item">
+        <h2 class="values__item-title">Work-Life Balance</h2>
+        <values__item-text>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</values__item-text>
+      </li>
+      <li class="values__item">
+        <h2 class="values__item-title">Quality Over Quantity</h2>
+        <values__item-text>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</values__item-text>
+      </li>
+      <li class="values__item">
+        <h2 class="values__item-title">Deliver Excellence</h2>
+        <values__item-text>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</values__item-text>
+      </li>
+    </ul>
+  </section>
+
+
+
+  <!-- CLIENTS -->
+  <section class="clients  container" id="clients">
+    <h1 class="clients__head">Our awesome clients</h1>
+    <p class="clients__head-sub">Proin iaculis purus consequat sem cure. </p>
+    <div class="row clients__citation">
+      <div class="col-md-3 clients__img">
+        <img src="img/client-1.jpg" alt="client-1.jpg"  width="221" height="221">
+      </div>
+      <blockquote class="col-md-9 clients__text">
+        <p>“ Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus.”</p>
+        <footer>- Jamie Richardson, Founder of Cocoa Media</footer>
+      </blockquote>
+      <div class="row clients__citation">
+        <blockquote class="col-md-9 clients__text">
+          <p>“ Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus. ” </p>
+          <footer>- Kim Thompson, Founder of Rainel</footer>
+        </blockquote>
+        <div class="col-md-3 clients__img">
+          <img src="img/client-2.jpg" alt="client-2.jpg"  width="221" height="221">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h1 class="contact__head">Ready to talk about your next project?</h1>
+      <a href="" class="contact__btn btn btn-success">Contact us</a>
+    </div>
+  </section>
+
+
+
+  <!-- FOOTER -->
   <footer class="container  footer">
-    <p>&copy; 2015 Company, Inc.</p>
+    <ul class="footer__summary  list-unstyled  list-inline">
+      <li>
+        <ul class="footer__summary-node  list-unstyled">
+          <li class="footer__summary-item">1</li>
+          <li class="footer__summary-item">2</li>
+          <li class="footer__summary-item">3</li>
+        </ul>
+      </li>
+      <li>
+        <ul class="footer__summary-node  list-unstyled">
+          <li class="footer__summary-item">4</li>
+          <li class="footer__summary-item">5</li>
+          <li class="footer__summary-item">6</li>
+          <li class="footer__summary-item">7</li>
+          <li class="footer__summary-item">8</li>
+        </ul>
+      </li>
+      <li>
+        <ul class="footer__summary-node  list-unstyled">
+          <li class="footer__summary-item">9</li>
+          <li class="footer__summary-item">0</li>
+        </ul>
+      </li>
+    </ul>
+    <div class="footer__copy">
+      <p>&copy; 2015 Company, Inc.</p>
+      <ul class="footer__socials  list-inline">
+        <li class="footer__socials-item footer__socials-item--tw">Twitter</li>
+        <li class="footer__socials-item footer__socials-item--fb">Facebook</li>
+        <li class="footer__socials-item footer__socials-item--pi">Pinterest</li>
+        <li class="footer__socials-item footer__socials-item--gp">Google Plus</li>
+        </ul>
+    </div>
   </footer>
 
 

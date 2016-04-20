@@ -31,5 +31,6 @@
           dots: true,
         }}
     });
+  });
 
 })(jQuery);
