@@ -3,8 +3,12 @@ body {
   color: $color-base;
   font-family: "Roboto Slab", sans-serif;
   overflow-x: hidden;
-  &.navbar-is-fixed-top {
+  /* &.navbar-is-fixed-top {
     padding-top: 115px;
+  } */
+  //padding-top: 115px;
+  &.initial {
+    padding-top: 0;
   }
 }
 

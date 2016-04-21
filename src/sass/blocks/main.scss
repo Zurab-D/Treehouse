@@ -1,11 +1,49 @@
 .navbar {
+  transition: all 0.4s ease-in;
+  .navbar-brand {
+    margin-top: 5px;
+    transition: 0.3s ease;
+  }
+  .logo-white {
+    display: none;
+  }
+  &--initial.navbar {
+    background-color: transparent;
+    border-color: transparent;
+    .logo-white {
+      display: block;
+    }
+    .logo-black {
+      display: none;
+    }
+    .nav>li.active>a {
+      color: #fff;
+    }
+    & .nav>li:hover>a {
+      color: #fff;
+    }
+    & .nav>li>a {
+      padding: 48px 17px 46px;
+      color: $color-grey;
+    }
+    & .nav>li.active>a {
+      &:after {
+        background-color: $color-grey-light;
+      }
+    }
+    .navbar-brand {
+      margin-top: 34px;
+    }
+  }
   & .nav>li:hover>a {
     color: $color-black;
   }
   & .nav>li.active>a {
     color: $color-black;
-    font-weight: bold;
     background-color: transparent;
+    &:after {
+      width: 100%;
+    }
   }
   & .nav>li.active:hover>a,
   & .nav>li>a:focus,
@@ -13,14 +51,35 @@
     background-color: transparent !important;
   }
   & .nav>li>a {
-    padding: 48px 17px 46px;
+    padding: 18px 17px 16px;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: normal;
     text-transform: uppercase;
+    transition: all 0.3s ease;
+    &:after {
+      content: '';
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      top: 3px;
+      height: 3px;
+      background-color: $color-green; //darken($color-grey, 10);
+      width: 0;
+      transition: all 0.3s ease;
+    }
   }
   &-brand {
     margin-top: 34px;
+  }
+}
+
+
+
+.section{
+  &--point {
+    padding-top: 43px;//55px;//115px;
+    margin-bottom: 30px;
   }
 }
 
@@ -30,7 +89,7 @@
   margin: 0 auto;
   padding: 0;
   height: 60px;
-  width: 200px;
+  width: 180px;
   border-radius: 10vh;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
@@ -53,18 +112,22 @@
   background: #777 url(#{$dirimg}bg-1.jpg) no-repeat 50% 50%;
   background-size: cover;
   background-attachment: fixed;
-  height: 530px;
+  height: 590px;//530px;
   color: #fff;
   text-align: center;
-  padding: 100px 25%;
+  padding: 160px 25% 0;
+  @media screen and (min-width: 768px) {
+    padding: 160px 25% 0;
+  }
   & &__head {
-    @include head-text;
+    @include head-text(#fff);
     font-size: 60px;
   }
   & &__text {
     margin-bottom: 0;
     font-size: 20px;
     line-height: auto;
+    color: #afafaf;
   }
   & &__btn {
     margin-top: 53px;
@@ -73,29 +136,73 @@
 
 
 
+.services {
+  &__head {
+    @include head-text;
+  }
+  &__subhead {
+   @include subhead-text;
+  }
+  &__item {
+    position: relative;
+    //margin-top: 160px;
+    padding-top: 140px;
+    &-head {
+      @include item-head;
+      text-align: center;
+    }
+    &-text {
+      text-align: center;
+    }
+    .icon {
+      top: 27%;
+      left: 48%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+
+
 .job {
-  color: #fff;
-  background: $color-grey url(#{$dirimg}/gear.png) no-repeat;
-  background-position: 26% 50%;
-  background-size: initial;
+  &__inner {
+    color: #fff;
+    background: $color-grey-light url(#{$dirimg}/gear.png) no-repeat;
+    background-position: 20% 50%;
+    background-size: initial;
+
+  }
   &__gear {
     height: 100%;
     font-size: 0;
   }
   &__list {
-    margin: 0;
+    margin: 26px 0 0;
+    &-item {
+      position: relative;
+      margin: 0 0 21px 51px;
+      font-size: 15px;
+      .icon {
+        position: absolute;
+        top: -4px;
+        left: -50px;
+      }
+    }
   }
   &__btn {
-    margin-top: 55px;
+    margin-top: 36px;
   }
   &__content{
+    margin-left: 29.2%;
+    width: 70.8%;
     padding: 72px 100px 100px;
     background: #555 url(#{$dirimg}/bg-2.jpg) no-repeat;
     background-attachment: fixed;
     background-size: cover;
   }
   &__head {
-    @include head-text;
+    @include head-text(#fff, left);
+    margin-bottom: 35px;
   }
   &__text {
     padding-right: 20%;
@@ -105,17 +212,116 @@
 
 
 
-.services {
+.portfolio {
+  padding-bottom: 94px;
   &__head {
     @include head-text;
-    color: $color-black;
+  }
+  &__subhead {
+   @include subhead-text;
+  }
+  &__content{
+    margin-top: 50px;
+    &-head {
+      @include item-head;
+      margin-bottom: 17px;
+    }
+  }
+  &__text {
+    padding-right: 10%;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  &__feature {
+    margin: 36px 0 26px 90px;
+    &-item:not(:last-child) {
+      margin-bottom: 46px;
+    }
+    &-title {
+      @include item-head;
+      margin-bottom: 0px;
+      text-transform: none;
+      position: relative;
+      .icon {
+        position: absolute;
+        top: -15px;
+        left: -90px;
+      }
+    }
+  }
+  &__details {
+    position: relative;
+    display: inline-block;
+    margin-top: 19px;
+    font-size: 16px;
+    color: $color-green;
+    text-transform: uppercase;
+    &:link,
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color-green;
+      text-decoration: none;
+    }
+    .icon {
+      top: 50%;
+      transform: translateY(-50%);
+      left: calc(100% + 5px);
+    }
+  }
+}
+
+
+
+.values {
+  &__head {
+    @include head-text;
+  }
+  &__subhead {
+   @include subhead-text;
+  }
+}
+
+
+
+.clients {
+  &__head {
+    @include head-text;
+  }
+  &__subhead {
+   @include subhead-text;
   }
 }
 
 
 
 .contact {
+  padding: 70px 0;
   background-color: $color-green;
+  text-align: center;
+  &__head {
+    @include head-text(#fff);
+    margin-top: -8px;
+    margin-bottom: 20px;
+  }
+  &__btn {
+    margin: 0;
+    padding: 0 30px;
+    border: 3px solid #fff;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    line-height: 46px;
+    text-transform: uppercase;
+    &:focus {
+      color: #fff;
+    }
+    &:hover {
+      background-color: #fff;
+      color: $color-green;
+    }
+  }
 }
 
 

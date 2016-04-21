@@ -128,10 +128,32 @@
 }
 
 
-@mixin head-text {
+
+@mixin head-text($color: $color-black, $align: center) {
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 40px;
   line-height: 1.2;
+  color: $color;
+  text-align: $align;
+}
+
+
+
+@mixin subhead-text($color: $color-base, $align: center) {
+  font-size: 19px;
+  line-height: 1.2;
+  color: $color;
+  text-align: $align;
+}
+
+
+
+@mixin item-head {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  color: $color-black;
+  text-transform: uppercase;
 }
