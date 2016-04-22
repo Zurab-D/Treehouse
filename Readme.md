@@ -1,6 +1,6 @@
-# Проект «Modest»
+# Project «Modest»
 
-* Разработчик: [Диаконашвили Зураб](https://github.com/Zurab-D).
+* Developer: [Zurb Diakonashvili](https://github.com/Zurab-D).
 
-### Тип проекта
-Лендинг
+### Project type
+Landing page
