@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="Treehouse">
+  <meta name="author" content="Zurab Diakonashvili">
+
+  <title>Treehouse project with Bootstrap</title>
+
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body  id="home" data-spy="scroll" data-target=".navbar" class="navbar-is-fixed-top  initial">
+
+  <!-- MENU -->
+  <div class="container-full">
+    <nav class="navbar  navbar-default  navbar-fixed-top  navbar--initial">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand  text-hide" href="#home"><img class="logo-black" src="img/logo.png" alt="logo" width="100" height="19"><img class="logo-white" src="img/logo-white.png" alt="logo" width="100" height="19">Project name</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#values">Values</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+
+  <!-- JUMBOTRON -->
+  <section class="jumbotron">
+    <div class="container">
+      <h1 class="jumbotron__head">Creative digital solutions</h1>
+      <p class="jumbotron__text  lead">Proin iaculis purus consequat sem cure. </p>
+      <a class="btn  btn-success  btn-more  jumbotron__btn" href="#signup" role="button">Sign up today</a>
+    </div>
+  </section>
+
+
+
+  <!-- SERVICES -->
+  <section class="services  container  section--point" id="services">
+    <h1 class="services__head">Professional services</h1>
+    <p class="services__subhead">Lorem ipsum dolor sit amet, consectetur.</p>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="services__item  services__item--designs">
+          <i class="icon icon-services-heart"></i>
+          <h2 class="services__item-head">Beauttiful designs</h2>
+          <p class="services__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus neque id tempore fuga eligendi repudiandae sapiente, ab eum?</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="services__item  services__item--responcive">
+          <i class="icon icon-services-mobile"></i>
+          <h2 class="services__item-head">Responsive web</h2>
+          <p class="services__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus neque id tempore fuga eligendi repudiandae sapiente, ab eum?</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="services__item  services__item--tools">
+          <i class="icon icon-services-graph"></i>
+          <h2 class="services__item-head">Marketing tools</h2>
+          <p class="services__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus neque id tempore fuga eligendi repudiandae sapiente, ab eum?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- JOB -->
+  <section class="job  section--point">
+    <div class="row  job__inner">
+      <div class="col-md-8-  col-md-offset-4-  job__content">
+        <h1 class="job__head">Just relax &<br>let us do the heavy lifting</h1>
+        <p class="job__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+        <ul class="job__list  list-unstyled">
+          <li class="job__list-item"><i class="icon icon-check-white"></i>Initial Setup & Customizations</li>
+          <li class="job__list-item"><i class="icon icon-check-white"></i>Regular Updates</li>
+          <li class="job__list-item"><i class="icon icon-check-white"></i>Round The Clock Support</li>
+        </ul>
+        <a href="#more" class="btn  btn-success  btn-more  job__btn">Learn more</a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- PORTFOLIO - LATEST PROJECT -->
+  <section class="portfolio  container  section--point" id="portfolio">
+    <h1 class="portfolio__head">Latest project</h1>
+    <p class="portfolio__subhead">Proin iaculis purus consequat sem cure</p>
+    <div class="row">
+      <article class="col-md-7  portfolio__content">
+        <h2 class="portfolio__content-head">Developing a framework</h2>
+        <p class="portfolio__text">Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
+        <ul class="portfolio__feature  list-unstyled">
+          <li class="portfolio__feature-item"><h3 class="portfolio__feature-title"><i class="icon icon-latest-basket"></i>E-Commerce Ready</h3><p class="portfolio__text">Proin iaculis purus consequat sem cure digni ssim. </p></li>
+          <li class="portfolio__feature-item"><h3 class="portfolio__feature-title"><i class="icon icon-latest-laptop"></i>Powerful SEO Features</h3><p class="portfolio__text">Proin iaculis purus consequat sem cure</p></li>
+          <li class="portfolio__feature-item"><h3 class="portfolio__feature-title"><i class="icon icon-latest-locked"></i>Secure Encryption</h3><p class="portfolio__text">Proin iaculis purus consequat sem cure iaculis .</p></li>
+        </ul>
+        <p class="portfolio__text">Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in.</p>
+        <a href="#details" class="portfolio__details">View Details <i class="icon icon-arrow-right"></i></a>
+      </article>
+    </div>
+  </section>
+
+
+
+  <!-- CULTUE & VALUES -->
+  <section class="values  container  section--point" id="values">
+    <h1 class="values__head">Culture & Values</h1>
+    <p class="values__subhead">Proin iaculis purus consequat cure. </p>
+    <ul class="values__list">
+      <li class="values__item">
+        <h2 class="values__item-title">Work-Life Balance</h2>
+        <values__item-text>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</values__item-text>
+      </li>
+      <li class="values__item">
+        <h2 class="values__item-title">Quality Over Quantity</h2>
+        <values__item-text>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</values__item-text>
+      </li>
+      <li class="values__item">
+        <h2 class="values__item-title">Deliver Excellence</h2>
+        <values__item-text>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</values__item-text>
+      </li>
+    </ul>
+  </section>
+
+
+
+  <!-- CLIENTS -->
+  <section class="clients  container  section--point" id="clients">
+    <h1 class="clients__head">Our awesome clients</h1>
+    <p class="clients__subhead">Proin iaculis purus consequat sem cure. </p>
+    <div class="row clients__citation">
+      <div class="col-md-3 clients__img">
+        <img src="img/client-1.jpg" alt="client-1.jpg"  width="221" height="221">
+      </div>
+      <blockquote class="col-md-9 clients__text">
+        <p>“ Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus.”</p>
+        <footer>- Jamie Richardson, Founder of Cocoa Media</footer>
+      </blockquote>
+      <div class="row clients__citation">
+        <blockquote class="col-md-9 clients__text">
+          <p>“ Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus. ” </p>
+          <footer>- Kim Thompson, Founder of Rainel</footer>
+        </blockquote>
+        <div class="col-md-3 clients__img">
+          <img src="img/client-2.jpg" alt="client-2.jpg"  width="221" height="221">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- CONTACT -->
+  <section class="contact  section--point" id="contact">
+    <div class="container">
+      <h1 class="contact__head">Ready to talk about your next project?</h1>
+      <a href="#contactus" class="contact__btn btn btn-success-">Contact us</a>
+    </div>
+  </section>
+
+
+
+  <!-- FOOTER -->
+  <footer class="container  footer">
+    <ul class="footer__summary  list-unstyled  list-inline">
+      <li>
+        <ul class="footer__summary-node  list-unstyled">
+          <li class="footer__summary-item">1</li>
+          <li class="footer__summary-item">2</li>
+          <li class="footer__summary-item">3</li>
+        </ul>
+      </li>
+      <li>
+        <ul class="footer__summary-node  list-unstyled">
+          <li class="footer__summary-item">4</li>
+          <li class="footer__summary-item">5</li>
+          <li class="footer__summary-item">6</li>
+          <li class="footer__summary-item">7</li>
+          <li class="footer__summary-item">8</li>
+        </ul>
+      </li>
+      <li>
+        <ul class="footer__summary-node  list-unstyled">
+          <li class="footer__summary-item">9</li>
+          <li class="footer__summary-item">0</li>
+        </ul>
+      </li>
+    </ul>
+    <div class="footer__copy">
+      <p>&copy; 2015 Company, Inc.</p>
+      <ul class="footer__socials  list-inline">
+        <li class="footer__socials-item footer__socials-item--tw">Twitter</li>
+        <li class="footer__socials-item footer__socials-item--fb">Facebook</li>
+        <li class="footer__socials-item footer__socials-item--pi">Pinterest</li>
+        <li class="footer__socials-item footer__socials-item--gp">Google Plus</li>
+        </ul>
+    </div>
+  </footer>
+
+
+
+  <script src="js/script.min.js"></script>
+</body>
+</html>
