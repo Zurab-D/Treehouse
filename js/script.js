@@ -5629,14 +5629,18 @@ if (typeof jQuery === 'undefined') {
     });
   });
 
-})(jQuery);
-
-$(window).scroll(function(){
-  if ($("body").scrollTop() > 80) {
+  if (Math.abs($('body')[0].getBoundingClientRect().top) > 80) {
     $('.navbar-fixed-top').removeClass('navbar--initial');
-    //$("body").removeClass('initial');
   } else {
     $('.navbar-fixed-top').addClass('navbar--initial');
-    //$("body").addClass('initial');
+  }
+})(jQuery);
+
+
+$(window).scroll(function(){
+  if (Math.abs($('body')[0].getBoundingClientRect().top) > 80) {
+    $('.navbar-fixed-top').removeClass('navbar--initial');
+  } else {
+    $('.navbar-fixed-top').addClass('navbar--initial');
   }
 });
